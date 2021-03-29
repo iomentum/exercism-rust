@@ -1,0 +1,19 @@
+{
+  "blurb": "Detect palindrome products in a given range.",
+  "authors": [
+    "Menkir"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/palindrome_products.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Problem 4 at Project Euler",
+  "source_url": "http://projecteuler.net/problem=4"
+}

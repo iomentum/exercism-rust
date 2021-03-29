@@ -1,0 +1,19 @@
+{
+  "blurb": "Report network IO statistics",
+  "authors": [
+    "coriolinus"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/paasio.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Brian Matsuo",
+  "source_url": "https://github.com/bmatsuo"
+}

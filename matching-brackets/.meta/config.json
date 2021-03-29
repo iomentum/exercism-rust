@@ -1,0 +1,18 @@
+{
+  "blurb": "Make sure the brackets and braces all match.",
+  "authors": [
+    "petertseng"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/matching_brackets.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Ginna Baker"
+}

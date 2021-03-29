@@ -1,0 +1,19 @@
+{
+  "blurb": "Determine if a sentence is a pangram.",
+  "authors": [
+    "IanWhitney"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/pangram.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Pangram"
+}

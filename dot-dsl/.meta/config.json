@@ -1,0 +1,19 @@
+{
+  "blurb": "Write a Domain Specific Language similar to the Graphviz dot language",
+  "authors": [
+    "ZapAnton"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/dot_dsl.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/DOT_(graph_description_language)"
+}

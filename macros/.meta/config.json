@@ -1,0 +1,18 @@
+{
+  "blurb": "Implement a macro using macros-by-example",
+  "source": "Peter Goodspeed-Niklaus",
+  "authors": [
+    "coriolinus"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/macros.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

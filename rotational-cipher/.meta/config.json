@@ -1,0 +1,19 @@
+{
+  "blurb": "Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.",
+  "authors": [
+    "LogoiLab"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/rotational_cipher.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Caesar_cipher"
+}

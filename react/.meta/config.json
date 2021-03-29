@@ -1,0 +1,17 @@
+{
+  "blurb": "Implement a basic reactive system.",
+  "authors": [
+    "petertseng"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/react.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

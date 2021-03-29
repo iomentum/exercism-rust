@@ -1,0 +1,19 @@
+{
+  "blurb": "Implement a binary search algorithm.",
+  "authors": [
+    "shybyte"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/binary_search.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Wikipedia",
+  "source_url": "http://en.wikipedia.org/wiki/Binary_search_algorithm"
+}

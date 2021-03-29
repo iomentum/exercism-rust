@@ -1,0 +1,19 @@
+{
+  "blurb": "Write a robot simulator.",
+  "authors": [
+    "IanWhitney"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/robot_simulator.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Inspired by an interview question at a famous company.",
+  "source_url": ""
+}

@@ -1,0 +1,18 @@
+{
+  "blurb": "Manage robot factory settings.",
+  "authors": [
+    "EduardoBautista"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/robot_name.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "A debugging session with Paul Blackwell at gSchool."
+}

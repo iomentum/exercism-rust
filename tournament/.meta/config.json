@@ -1,0 +1,17 @@
+{
+  "blurb": "Tally the results of a small football competition.",
+  "authors": [
+    "EduardoBautista"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/tournament.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

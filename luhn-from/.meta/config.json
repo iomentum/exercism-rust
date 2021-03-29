@@ -1,0 +1,18 @@
+{
+  "blurb": "Luhn: Using the From Trait",
+  "source": "The Rust track maintainers, based on the original Luhn exercise",
+  "authors": [
+    "IanWhitney"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/luhn_from.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

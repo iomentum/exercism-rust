@@ -1,0 +1,18 @@
+{
+  "blurb": "Implement a Decimal type",
+  "source": "Peter Goodspeed-Niklaus",
+  "authors": [
+    "coriolinus"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/decimal.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

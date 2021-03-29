@@ -1,0 +1,19 @@
+{
+  "blurb": "Convert a long phrase to its acronym",
+  "authors": [
+    "gregcline"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/acronym.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  },
+  "source": "Julien Vanier",
+  "source_url": "https://github.com/monkbroc"
+}

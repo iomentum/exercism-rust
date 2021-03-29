@@ -1,0 +1,17 @@
+{
+  "blurb": "Count the rectangles in an ASCII diagram.",
+  "authors": [
+    "EduardoBautista"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/rectangles.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

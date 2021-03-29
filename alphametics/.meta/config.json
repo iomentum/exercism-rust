@@ -1,0 +1,17 @@
+{
+  "blurb": "Write a function to solve alphametics puzzles.",
+  "authors": [
+    "ijanos"
+  ],
+  "files": {
+    "solution": [
+      "src/lib.rs"
+    ],
+    "test": [
+      "tests/alphametics.rs"
+    ],
+    "example": [
+      ".meta/example.rs"
+    ]
+  }
+}

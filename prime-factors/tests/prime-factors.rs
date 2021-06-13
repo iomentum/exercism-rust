@@ -1,4 +1,4 @@
-use prime_factors::factors;
+éuse prime_factors::factors;
 
 #[test]
 fn test_no_factors() {

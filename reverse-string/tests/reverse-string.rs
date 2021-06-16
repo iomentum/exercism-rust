@@ -19,50 +19,49 @@ fn test_an_empty_string() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// a word
 fn test_a_word() {
     process_reverse_case("robot", "tobor");
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// a capitalized word
 fn test_a_capitalized_word() {
     process_reverse_case("Ramen", "nemaR");
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// a sentence with punctuation
 fn test_a_sentence_with_punctuation() {
     process_reverse_case("I'm hungry!", "!yrgnuh m'I");
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// a palindrome
 fn test_a_palindrome() {
     process_reverse_case("racecar", "racecar");
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// an even-sized word
 fn test_an_even_sized_word() {
     process_reverse_case("drawer", "reward");
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 /// wide characters
 fn test_wide_characters() {
     process_reverse_case("子猫", "猫子");
 }
 
 #[test]
-#[ignore]
-#[cfg(feature = "grapheme")]
+// #[ignore]
 /// grapheme clusters
 fn test_grapheme_clusters() {
     process_reverse_case("uüu", "uüu");

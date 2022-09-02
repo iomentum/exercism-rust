@@ -1,11 +1,10 @@
 use std::marker::PhantomData;
 
 pub struct CircularBuffer<T> {
-    // This field is here to make the template compile and not to
-    // complain about unused type parameter 'T'. Once you start
-    // solving the exercise, delete this field and the 'std::marker::PhantomData'
-    // import.
-    field: PhantomData<T>,
+    capacity: usize,
+    buffer: Vec<Option<T>>,
+    read_id: usize,
+    write_id: usize,
 }
 
 #[derive(Debug, PartialEq)]
@@ -16,28 +15,62 @@ pub enum Error {
 
 impl<T> CircularBuffer<T> {
     pub fn new(capacity: usize) -> Self {
-        unimplemented!(
-            "Construct a new CircularBuffer with the capacity to hold {}.",
-            match capacity {
-                1 => "1 element".to_string(),
-                _ => format!("{} elements", capacity),
-            }
-        );
+        Self {
+            capacity: capacity,
+            buffer: (0..capacity).map(|_| None).collect(),
+            read_id: 0,
+            write_id: 0,
+        }
     }
 
-    pub fn write(&mut self, _element: T) -> Result<(), Error> {
-        unimplemented!("Write the passed element to the CircularBuffer or return FullBuffer error if CircularBuffer is full.");
+    pub fn write(&mut self, element: T) -> Result<(), Error> {
+        if self.buffer[self.write_id].is_some() {
+            Err(Error::FullBuffer)
+        } else {
+            self.buffer[self.write_id] = Some(element);
+            self.increment_id("write_id".to_string());
+            Ok(())
+        }
     }
 
     pub fn read(&mut self) -> Result<T, Error> {
-        unimplemented!("Read the oldest element from the CircularBuffer or return EmptyBuffer error if CircularBuffer is empty.");
+        if let Ok(element) = self.buffer[self.read_id].take().ok_or(Error::EmptyBuffer) {
+            self.increment_id("read_id".to_string());
+            Ok(element)
+        } else {
+            return Err(Error::EmptyBuffer)
+        }
     }
 
     pub fn clear(&mut self) {
-        unimplemented!("Clear the CircularBuffer.");
+        self.buffer = (0..self.capacity).map(|_| None).collect();
+        self.write_id = 0;
+        self.read_id = 0;
     }
 
-    pub fn overwrite(&mut self, _element: T) {
-        unimplemented!("Write the passed element to the CircularBuffer, overwriting the existing elements if CircularBuffer is full.");
+    pub fn overwrite(&mut self, element: T) {
+        let is_written = self.buffer[self.write_id].is_some();
+        self.buffer[self.write_id] = Some(element);
+
+        if is_written {
+            self.increment_id("read_id".to_string());
+        }
+        self.increment_id("write_id".to_string());
+    }
+
+    fn increment_id(&mut self, id_name: String) {
+        if id_name == "read_id".to_string() {
+            if self.read_id == self.capacity - 1 {
+                self.read_id = 0;
+            } else {
+                self.read_id += 1;
+            }
+        } else {
+            if self.write_id == self.capacity - 1 {
+                self.write_id = 0;
+            } else {
+                self.write_id += 1;
+            }
+        }
     }
 }
